@@ -22,7 +22,9 @@ public class Main {
         int num4 = sc.nextInt();
         System.out.println("Проверка: положительное - true, отрицательное - false. Результат: " + IsPositive.isPositive(num4));
 
-
+        System.out.println("5. Введите положительное число: ");
+        int num5 = sc.nextInt();
+        System.out.println("Проверка: двузначное - true, недвузначное - false. Результат: " + Is2Digits.is2Digits(num5));
     }
 }
 
