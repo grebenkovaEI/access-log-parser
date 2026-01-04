@@ -23,6 +23,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int[] arr = {1,2,3,4,2,2,5,-7};
         int[] arrPalindrom = {1,-2,-7,4,-7,-2,1};
+        int[] arr1 = {1,2,3};
+        int[] arr2 = {7,8,9};
 
         System.out.println("Массив: " + Arrays.toString(arr));
         System.out.println("1. Введите число x: ");
@@ -47,6 +49,34 @@ public class Main {
         Array.reverse(arr);
 
         System.out.println("7. Массив:\n" + Arrays.toString(arr) + "\nНовый массив:\n" + Arrays.toString(Array.reverseBack(arr)));
+
+        System.out.println("8. Массив arr1:\n" + Arrays.toString(arr1) + "\nМассив arr2:\n"
+                + Arrays.toString(arr2) + "\nОбъединенный массив:\n" + Arrays.toString(Array.concat(arr1,arr2)));
+
+        System.out.println("9. Массив arr:\n" + Arrays.toString(arr));
+        System.out.println("Введите число x: ");
+        int num3 = sc.nextInt();
+        System.out.println("Новый массив, в котором записаны индексы всех вхождений числа x в массив arr "
+                + Arrays.toString(Array.findAll(arr, num3)));
+
+        System.out.println("10. Массив:\n" + Arrays.toString(arrPalindrom) + "\nНовый массив:\n"
+                + Arrays.toString(Array.deleteNegative(arrPalindrom)));
+
+        System.out.println("11. Массив arr1:\n" + Arrays.toString(arr1));
+        System.out.println("Введите число x: ");
+        int num4 = sc.nextInt();
+        System.out.println("Введите значение позиции pos: ");
+        int num5 = sc.nextInt();
+        System.out.println("Новый массив, который содержит все элементы массива arr1, в позицию pos вставлено значение x: "
+                + Arrays.toString(Array.add(arr1, num4, num5)));
+
+        System.out.println("12. Массив arr1:\n" + Arrays.toString(arr1));
+        System.out.println("Массив arr2:\n" + Arrays.toString(arr2));
+        System.out.println("Введите значение позиции pos: ");
+        int num6 = sc.nextInt();
+        System.out.println("Новый массив, который содержит все элементы массива arr1, в позицию pos вставлены значения массива arr2: "
+                + Arrays.toString(Array.add(arr1, arr2, num6)));
+
     }
     public static void endlessLoop(){
         int count = 0;

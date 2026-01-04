@@ -50,4 +50,71 @@ public class Array {
         }
         return res;
     }
+    public static int[] concat(int[] arr1, int[] arr2){
+        int[] tmp = new int [arr1.length + arr2.length];
+        for (int i = 0; i < arr1.length; i++) {
+            tmp[i] = arr1[i];
+        }
+        int j = arr1.length;
+        for (int i = 0; i < arr2.length; i++) {
+            tmp[j++] = arr2[i];
+        }
+        int[] res = new int[j];
+        for (int i = 0; i < j; i++) {
+            res[i] = tmp[i];
+        }
+        return res;
+    }
+    public static int[] findAll(int[] arr, int x){
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == x) count++;
+        }
+        int[] res = new int [count];
+        int j = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == x) {
+                res[j] = i;
+                j++;
+            }
+        }
+        return res;
+    }
+    public static int[] deleteNegative(int[] arr){
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] >= 0) count++;
+        }
+        int[] res = new int [count];
+        int j = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] >= 0) {
+                res[j] = arr[i];
+                j++;
+            }
+        }
+        return res;
+    }
+    public static int[] add(int[] arr, int x, int pos){
+        int[] res = new int[arr.length + 1];
+        for (int i = 0; i < arr.length; i++) {
+            if (i < pos) res[i] = arr[i];
+            else res[i + 1] = arr[i];
+        }
+        res[pos] = x;
+        return res;
+    }
+    public static int[] add(int[] arr, int[] ins, int pos){
+        int[] res = new int[arr.length + ins.length];
+        for (int i = 0; i < pos; i++) {
+            res[i] = arr[i];
+        }
+        for (int i = 0; i < ins.length; i++) {
+            res[pos + i] = ins[i];
+        }
+        for (int i = pos; i < arr.length; i++) {
+            res[ins.length + i] = arr[i];
+        }
+        return res;
+    }
 }
