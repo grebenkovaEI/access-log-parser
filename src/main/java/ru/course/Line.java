@@ -1,0 +1,19 @@
+package ru.course;
+
+public class Line {
+    Dot start, end;
+    public Line(Dot start, Dot end) {
+        this.start = start;
+        this.end = end;
+    }
+    public Line(int x1, int y1, int x2, int y2) {
+        this.start = new Dot(x1, y1);
+        this.end = new Dot(x2, y2);
+    }
+    public String toString() {
+        return "Линия от " + this.start.toString() + " до " + this.end.toString();
+    }
+    public double getLength(){
+        return Math.sqrt(Math.pow((end.x - start.x), 2) + Math.pow((end.y - start.y), 2));
+    }
+}
