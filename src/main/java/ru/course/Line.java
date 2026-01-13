@@ -14,6 +14,6 @@ public class Line {
         return "Линия от " + this.start.toString() + " до " + this.end.toString();
     }
     public double getLength(){
-        return Math.sqrt(Math.pow((end.x - start.x), 2) + Math.pow((end.y - start.y), 2));
+        return Math.sqrt(Math.pow((end.getX() - start.getX()), 2) + Math.pow((end.getY() - start.getY()), 2));
     }
 }
