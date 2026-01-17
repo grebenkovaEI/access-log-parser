@@ -19,10 +19,10 @@ public class Main {
         Line l2 = new Line(10,11,15,19);
         Line l3 = new Line(l1.end, l2.start);
         System.out.println(l3);
-        l1.end.x = 8;
-        l1.end.y = 8;
-        l2.start.x = 9;
-        l2.start.y = 9;
+        l1.end.setX(8);
+        l1.end.setY(8);
+        l2.start.setX(9);
+        l2.start.setY(9);
         System.out.println(l3);
         double sumLength = l1.getLength() + l2.getLength() + l3.getLength();
         System.out.println(sumLength);
@@ -52,8 +52,8 @@ public class Main {
         if (p1Length == p1LinesLength) System.out.println("Длина ломаной и длина массива ломаной совпадают");
         //Изменить координаты Точки {2,8} таким образом, чтобы она стала иметь значение {12,8}. Если изменения отразились в данной точке,
         // в Ломаной и в двух Линиях массива (из пункта 3), то задача решена верно
-        dot2.x = 12;
-        dot2.y = 8;
+        dot2.setX(12);
+        dot2.setY(8);
         System.out.println("Точка {2,8} изменена на " + dot2);
         System.out.println(p1);
         System.out.println(Arrays.toString(p1Lines));
@@ -102,6 +102,14 @@ public class Main {
         System.out.println(f3);
         System.out.println("Посчитать f1.sum(f2).sum(f3).minus(5), где f1 это одна треть, f2 две пятых, " +
                 "а f3 это семь восьмых. Результат: " + f1.sum(f2).sum(f3).minus(5));
+        System.out.println("--------");
+
+        Student student = new Student("Иван");
+        student.addGrade(5);
+        //student.addGrade(1);
+        student.addGrade(3);
+        student.addGrade(5);
+        System.out.println(student);
     }
 }
 
