@@ -1,4 +1,4 @@
-package ru.course;
+package ru.course.employee;
 
 public class Employee {
     private final String name;

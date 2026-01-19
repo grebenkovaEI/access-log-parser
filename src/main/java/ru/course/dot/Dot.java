@@ -1,4 +1,4 @@
-package ru.course;
+package ru.course.dot;
 
 public class Dot {
     private int x, y;

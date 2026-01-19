@@ -1,4 +1,4 @@
-package ru.course;
+package ru.course.fraction;
 
 public class Fraction {
     private final int numerator;

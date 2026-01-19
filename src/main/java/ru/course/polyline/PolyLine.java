@@ -1,4 +1,7 @@
-package ru.course;
+package ru.course.polyline;
+
+import ru.course.dot.Dot;
+import ru.course.line.Line;
 
 public class PolyLine {
     Dot[] arrayDot;

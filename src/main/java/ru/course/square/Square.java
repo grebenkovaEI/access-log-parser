@@ -1,4 +1,6 @@
-package ru.course;
+package ru.course.square;
+
+import ru.course.dot.Dot;
 
 public class Square {
     private Dot dot;

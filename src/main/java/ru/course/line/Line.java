@@ -1,4 +1,6 @@
-package ru.course;
+package ru.course.line;
+
+import ru.course.dot.Dot;
 
 public class Line {
     Dot start, end;

@@ -1,4 +1,4 @@
-package ru.course;
+package ru.course.employee;
 
 public class Department {
     private final String name;
