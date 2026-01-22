@@ -4,7 +4,7 @@ import ru.course.objectsAndClasses.dot.Dot;
 import ru.course.objectsAndClasses.line.Line;
 
 public class PolyLine {
-    Dot[] arrayDot;
+    private Dot[] arrayDot;
 
     public PolyLine(Dot[] arrayDot) {
         this.arrayDot = arrayDot;
@@ -12,6 +12,11 @@ public class PolyLine {
     public PolyLine() {
         this.arrayDot = new Dot[0];
     }
+
+    public Dot[] getArrayDot() {
+        return arrayDot;
+    }
+
     public String toString() {
         String res = "Линия[";
         for (int i = 0; i < arrayDot.length; i++) {
