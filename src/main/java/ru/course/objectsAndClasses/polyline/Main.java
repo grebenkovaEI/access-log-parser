@@ -1,8 +1,7 @@
-package ru.course.polyline;
+package ru.course.objectsAndClasses.polyline;
 
-import ru.course.*;
-import ru.course.dot.Dot;
-import ru.course.line.Line;
+import ru.course.objectsAndClasses.dot.Dot;
+import ru.course.objectsAndClasses.line.Line;
 
 import java.util.Arrays;
 

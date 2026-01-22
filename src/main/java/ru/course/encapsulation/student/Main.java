@@ -1,4 +1,4 @@
-package ru.course.student;
+package ru.course.encapsulation.student;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ru.course.student;
+package ru.course.encapsulation.student;
 
 import java.util.ArrayList;
 import java.util.List;

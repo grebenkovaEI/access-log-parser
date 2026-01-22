@@ -1,4 +1,4 @@
-package ru.course.city;
+package ru.course.objectsAndClasses.city;
 
 import java.util.ArrayList;
 import java.util.List;

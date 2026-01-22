@@ -1,4 +1,4 @@
-package ru.course.fraction;
+package ru.course.encapsulation.fraction;
 
 public class Main {
     public static void main(String[] args) {

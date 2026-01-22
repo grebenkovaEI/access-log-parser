@@ -1,4 +1,4 @@
-package ru.course.city;
+package ru.course.objectsAndClasses.city;
 
 public class Main {
     public static void main(String[] args) {

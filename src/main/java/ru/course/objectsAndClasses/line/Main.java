@@ -1,9 +1,6 @@
-package ru.course.line;
+package ru.course.objectsAndClasses.line;
 
-import ru.course.*;
-import ru.course.dot.Dot;
-
-import java.util.Arrays;
+import ru.course.objectsAndClasses.dot.Dot;
 
 public class Main {
     public static void main(String[] args) {

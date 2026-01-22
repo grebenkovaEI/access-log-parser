@@ -1,0 +1,25 @@
+package ru.course.polymorphism.Point3D;
+
+import ru.course.objectsAndClasses.dot.Dot;
+
+public class Point3D extends Dot {
+    private int z;
+
+    public Point3D(int x, int y, int z) {
+        super(x, y);
+        this.z = z;
+    }
+
+    public int getZ() {
+        return z;
+    }
+
+    public void setZ(int z) {
+        this.z = z;
+    }
+
+    @Override
+    public String toString() {
+        return "{" + getX() + ";" + getY() + ";" + getZ() + "}";
+    }
+}

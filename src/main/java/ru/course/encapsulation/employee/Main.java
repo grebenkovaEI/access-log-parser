@@ -1,7 +1,4 @@
-package ru.course.employee;
-
-import ru.course.employee.Department;
-import ru.course.employee.Employee;
+package ru.course.encapsulation.employee;
 
 
 public class Main {

@@ -1,6 +1,6 @@
-package ru.course.square;
+package ru.course.encapsulation.square;
 
-import ru.course.dot.Dot;
+import ru.course.objectsAndClasses.dot.Dot;
 
 public class Square {
     private Dot dot;

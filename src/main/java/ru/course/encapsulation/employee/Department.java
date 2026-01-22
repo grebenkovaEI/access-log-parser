@@ -1,4 +1,4 @@
-package ru.course.employee;
+package ru.course.encapsulation.employee;
 
 public class Department {
     private final String name;

@@ -1,4 +1,4 @@
-package ru.course.employee;
+package ru.course.encapsulation.employee;
 
 public class Employee {
     private final String name;

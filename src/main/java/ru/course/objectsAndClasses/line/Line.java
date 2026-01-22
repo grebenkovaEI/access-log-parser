@@ -1,6 +1,6 @@
-package ru.course.line;
+package ru.course.objectsAndClasses.line;
 
-import ru.course.dot.Dot;
+import ru.course.objectsAndClasses.dot.Dot;
 
 public class Line {
     Dot start, end;

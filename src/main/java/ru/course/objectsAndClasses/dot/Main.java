@@ -1,8 +1,4 @@
-package ru.course.dot;
-
-import ru.course.*;
-
-import java.util.Arrays;
+package ru.course.objectsAndClasses.dot;
 
 public class Main {
     public static void main(String[] args) {

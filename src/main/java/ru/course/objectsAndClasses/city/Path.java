@@ -1,6 +1,4 @@
-package ru.course.city;
-
-import ru.course.city.City;
+package ru.course.objectsAndClasses.city;
 
 public class Path {
     City name;
