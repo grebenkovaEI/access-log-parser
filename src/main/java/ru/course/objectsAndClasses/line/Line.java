@@ -1,9 +1,10 @@
 package ru.course.objectsAndClasses.line;
 
 import ru.course.objectsAndClasses.dot.Dot;
+import ru.course.polymorphism.Measurable.Measurable;
 
-public class Line {
-    Dot start, end;
+public class Line implements Measurable {
+    private final Dot start, end;
     public Line(Dot start, Dot end) {
         this.start = start;
         this.end = end;
@@ -12,9 +13,19 @@ public class Line {
         this.start = new Dot(x1, y1);
         this.end = new Dot(x2, y2);
     }
+
+    public Dot getStart() {
+        return start;
+    }
+
+    public Dot getEnd() {
+        return end;
+    }
+
     public String toString() {
         return "Линия от " + this.start.toString() + " до " + this.end.toString();
     }
+    @Override
     public double getLength(){
         return Math.sqrt(Math.pow((end.getX() - start.getX()), 2) + Math.pow((end.getY() - start.getY()), 2));
     }

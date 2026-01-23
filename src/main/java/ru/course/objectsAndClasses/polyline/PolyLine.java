@@ -2,9 +2,10 @@ package ru.course.objectsAndClasses.polyline;
 
 import ru.course.objectsAndClasses.dot.Dot;
 import ru.course.objectsAndClasses.line.Line;
+import ru.course.polymorphism.Measurable.Measurable;
 
-public class PolyLine {
-    private Dot[] arrayDot;
+public class PolyLine implements Measurable {
+    private final Dot[] arrayDot;
 
     public PolyLine(Dot[] arrayDot) {
         this.arrayDot = arrayDot;
@@ -35,6 +36,7 @@ public class PolyLine {
         }
         return arrayLines;
     }
+    @Override
     public double getLength(){
         double res = 0;
         for (int i = 0; i < arrayDot.length - 1; i++) {
