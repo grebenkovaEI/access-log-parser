@@ -1,10 +1,10 @@
-package ru.course.encapsulation.fraction;
+package ru.course.polymorphism.FractionIsNumber;
 
-public class Fraction extends Number{
+public class FractionIsNumber extends Number{
     private final int numerator;
     private final int denominator;
 
-    public Fraction(int numerator, int denominator) {
+    public FractionIsNumber(int numerator, int denominator) {
         this.numerator = numerator;
         if (denominator <= 0) throw new IllegalArgumentException("Для знаменателя отрицательное значение недопустимо");
         this.denominator = denominator;
@@ -22,25 +22,25 @@ public class Fraction extends Number{
     public String toString() {
         return numerator + "/" + denominator;
     }
-    public Fraction sum(Fraction f){
+    public FractionIsNumber sum(FractionIsNumber f){
         int num = this.numerator * f.denominator + this.denominator * f.numerator;
         int den = this.denominator * f.denominator;
-        return new Fraction(num, den);
+        return new FractionIsNumber(num, den);
     }
-    public Fraction minus(Fraction f){
+    public FractionIsNumber minus(FractionIsNumber f){
         int num = this.numerator * f.denominator - this.denominator * f.numerator;
         int den = this.denominator * f.denominator;
-        return new Fraction(num, den);
+        return new FractionIsNumber(num, den);
     }
-    public Fraction sum(int x){
+    public FractionIsNumber sum(int x){
         int num = this.numerator + this.denominator * x;
         int den = this.denominator;
-        return new Fraction(num, den);
+        return new FractionIsNumber(num, den);
     }
-    public Fraction minus(int x){
+    public FractionIsNumber minus(int x){
         int num = this.numerator - this.denominator * x;
         int den = this.denominator;
-        return new Fraction(num, den);
+        return new FractionIsNumber(num, den);
     }
 
     @Override

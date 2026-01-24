@@ -1,4 +1,4 @@
-package ru.course.polymorphism.stringLength;
+package ru.course.polymorphism.StringLength;
 
 import ru.course.polymorphism.Measurable.Measurable;
 import ru.course.polymorphism.Measurable.PrintLengths;
