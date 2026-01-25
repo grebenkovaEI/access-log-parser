@@ -2,13 +2,13 @@ package ru.course.objects.employee;
 
 public class Employee {
     private final String name;
-    private Department department;
+    Department department;
 
     public Employee(String name) {
         this.name = name;
     }
 
-    public void setDepartment(Department department) {
+    void setDepartment(Department department) {
         this.department = department;
     }
 
