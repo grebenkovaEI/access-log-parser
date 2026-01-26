@@ -3,11 +3,20 @@ package ru.course.classObject.comparingDots;
 import java.util.Objects;
 
 public class ComparingDots implements Cloneable{
-    int x,y;
+    private final int x;
+    private final int y;
 
     public ComparingDots(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 
     @Override
@@ -24,7 +33,7 @@ public class ComparingDots implements Cloneable{
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
 }
