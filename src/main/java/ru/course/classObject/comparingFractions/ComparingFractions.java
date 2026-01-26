@@ -1,4 +1,4 @@
-package ru.course.classObject;
+package ru.course.classObject.comparingFractions;
 
 import java.util.Objects;
 
