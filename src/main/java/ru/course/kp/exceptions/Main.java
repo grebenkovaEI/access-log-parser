@@ -1,4 +1,4 @@
-package ru.course.kp;
+package ru.course.kp.exceptions;
 
 import java.io.BufferedReader;
 import java.io.File;
