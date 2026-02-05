@@ -1,4 +1,4 @@
-package ru.course.collections.kp;
+package ru.course.collections.kp1;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

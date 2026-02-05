@@ -1,4 +1,4 @@
-package ru.course.collections.kp;
+package ru.course.collections.kp1;
 //src/main/java/ru/course/collections/kp/Main.java
 import java.io.BufferedReader;
 import java.io.FileReader;

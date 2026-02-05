@@ -1,4 +1,4 @@
-package ru.course.collections.kp;
+package ru.course.collections.kp1;
 
 import ru.course.kp.oop.httpMethod;
 

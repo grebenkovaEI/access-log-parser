@@ -1,4 +1,4 @@
-package ru.course.collections.kp;
+package ru.course.collections.kp1;
 
 public class UserAgent {
     private final String typeOS, browser;
